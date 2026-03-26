@@ -40,18 +40,20 @@ Milwaukee-Ticket-Data-Analysis/
 ## Key Findings & Visualizations
 
 ### Data Processing Pipeline
+
 - **Geocoding**: Matched ~50% of ticket addresses to coordinates using Milwaukee's address point data
 - **Challenge**: Significant address mismatch (~375k unmatched records) suggests address schema changes since 2012
 - **Solution**: Dictionary-based geocoding using hash maps for efficient coordinate lookup
 
 ### Visualizations Created
-1. **3D Spatiotemporal Plot**: Tickets plotted across latitude, longitude, and time
+
 2. **Animated Map**: Daily ticket issuance across the city throughout 2012 (exported as GIF)
 3. **Density Heatmap**: Concentration of parking enforcement activity
 
 ## Technical Approach
 
 ### Technologies Used
+
 - **Python**: Core analysis language
 - **Pandas**: Data manipulation and time series handling
 - **GeoPandas**: Spatial data processing
@@ -60,6 +62,7 @@ Milwaukee-Ticket-Data-Analysis/
 - **Pandarallel**: Parallel processing for large-scale geocoding
 
 ### Key Processing Steps
+
 1. Load and parse ticket data with datetime conversion
 2. Geocode addresses using Milwaukee address point data
 3. Convert to GeoDataFrame for spatial analysis
@@ -69,30 +72,10 @@ Milwaukee-Ticket-Data-Analysis/
 ## Research Context
 
 This project explores approaches to parking ticket prediction, considering:
+
 - **Spatial Factors**: Street segments, blocks, and enforcement routes
 - **Temporal Patterns**: Day of week, month, time of day
 - **Novelty Detection**: Treating ticket prediction as a one-class classification problem due to extreme class imbalance
-
-### Related Work
-- Random Forest approaches from Madison/NYC deep learning studies
-- RNN-based time series prediction for Thessaloniki, Greece parking data
-
-## Future Work
-
-### Planned Analyses
-- **Time Series Modeling**: forecasting tickets; compare models like ARIMA or Prophet to time series foundation models
-- **Feature Engineering**: Extract temporal features (day of week, month, holiday status)
-- **Equity Analysis**
-- **Advanced Models for Spatio-Temporal ticket prediction**: 
-  - One-class SVM/SVDD for novelty detection
-  - Spatio-Temporal graph neural networks
-  - Generative density estimation methods
-
-### Data Needs
-- Vehicle capacity estimates per street segment
-- Parking regulation data (time restrictions, permit zones)
-- Weather data for correlation analysis with enforcement patterns
-- Socioeconomic data for equity analysis
 
 ## Installation & Usage
 
@@ -126,5 +109,3 @@ jupyter notebook
 ## Links
 
 - [Milwaukee Street Data](https://data.milwaukee.gov/dataset/streets)
-
-
