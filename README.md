@@ -5,6 +5,7 @@ A data analysis project exploring patterns in Milwaukee parking ticket issuance 
 ## About
 
 This project analyzes parking ticket data from Milwaukee, Wisconsin, with a focus on:
+
 - **Data Processing**: Geocoding ticket locations using Milwaukee's address point data from ArcGIS
 - **Exploratory Analysis**: Identifying spatial and temporal patterns in ticket issuance
 - **Visualization**: Creating interactive maps and time series visualizations to reveal enforcement patterns
@@ -13,12 +14,14 @@ This project analyzes parking ticket data from Milwaukee, Wisconsin, with a focu
 ### Background
 
 This project utilizes two primary parking ticket datasets:
+
 - **2012 Data**: Available from [MKE_2012_Parking_Violations](https://github.com/milwaukeedata/MKE_2012_Parking_Violations), originally compiled by Duncan Solutions (the city's former debt collector and current parking IT infrastructure manager). This data represents the pre-LPR (License Plate Recognition) era.
 - **2014-2022 Data**: Obtained via a Freedom of Information Act request filed with the City of Milwaukee in fall 2022, covering the post-LPR era after Milwaukee's Department of Public Works introduced automated plate recognition systems around early 2013.
 
 ## Data Sources
 
 - **Parking Tickets**: 
+
   - [2012 dataset](https://github.com/milwaukeedata/MKE_2012_Parking_Violations) (~750k records)
   - 2014-2022 dataset (FOIA request, fall 2022)
 - **Geocoding Reference**: [Milwaukee Address Points](https://gis-mclio.opendata.arcgis.com/datasets/MCLIO::address-points/about) from ArcGIS Open Data
@@ -49,8 +52,6 @@ Milwaukee-Ticket-Data-Analysis/
 
 2. **Animated Map**: Daily ticket issuance across the city throughout 2012 (exported as GIF)
 3. **Density Heatmap**: Concentration of parking enforcement activity
-
-## Technical Approach
 
 ### Technologies Used
 
@@ -109,3 +110,4 @@ jupyter notebook
 ## Links
 
 - [Milwaukee Street Data](https://data.milwaukee.gov/dataset/streets)
+  - Contains a graphic representation of the street centerline as well as attribute data for each official street including address ranges, street direction, street name and street type.
